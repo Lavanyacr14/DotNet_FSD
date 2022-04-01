@@ -16,11 +16,18 @@ namespace BasicCSharp
             double d = 1234.55;
             decimal e = 23333333333333.34M;
 
+            char f = 'C';
+            string g = "Lavanya";
+            bool h = true;
+
             Console.WriteLine(a);
             Console.WriteLine(b);
             Console.WriteLine(c);
             Console.WriteLine(d);
             Console.WriteLine(e);
+            Console.WriteLine(f);
+            Console.WriteLine(g);
+            Console.WriteLine(h);            
         }
     }
 }
