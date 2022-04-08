@@ -1,4 +1,5 @@
 ﻿using System;
+using DSA.Algorithm;
 
 namespace DSA
 {
@@ -9,7 +10,9 @@ namespace DSA
             /*Stack stack = new Stack();
             stack.Do();*/
             //new Queue().Do();
-            new LinkedList().Do();
+            // new LinkedList().Do();
+            //new Linear_Search().Do();
+            new Binary_Search().Do();
         }
     }
 }

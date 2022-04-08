@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BasicCSharp
 {
-    class StudentCrud
+    class Teacher_Crud
     {
         public void Do()
         {
@@ -18,19 +18,19 @@ namespace BasicCSharp
                 string option = Console.ReadLine();
                 if (option == "A")
                 {
-                    new StudentCrud().AddData();
+                    new Teacher_Crud().AddData();
                 }
                 else if (option == "U")
                 {
-                    new StudentCrud().UpdateData();
+                    new Teacher_Crud().UpdateData();
                 }
                 else if (option == "R")
                 {
-                    new StudentCrud().RemoveData();
+                    new Teacher_Crud().RemoveData();
                 }
                 else if (option == "D")
                 {
-                    new StudentCrud().DisplayData();
+                    new Teacher_Crud().DisplayData();
                 }
                 else if (option == "E")
                 {
@@ -41,15 +41,16 @@ namespace BasicCSharp
         }
         public void AddData()
         {
-            Console.WriteLine("Enter the student record in format (ID, Name, Dept)");
-            string student = Console.ReadLine();
-            student += "\n";
-            File.AppendAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Student.txt",student);
+            Console.WriteLine("Enter the teacher record in format (ID, Name, Class, Section)");
+            string teacher = Console.ReadLine();
+            teacher += "\n";
+            File.AppendAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Teacher.txt", teacher);
+            Console.WriteLine("Record Added!");
         }
 
         public void DisplayData()
         {
-            string content = File.ReadAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Student.txt");
+            string content = File.ReadAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Teacher.txt");
             Console.WriteLine(content);
         }
 
@@ -58,12 +59,12 @@ namespace BasicCSharp
             Console.WriteLine("Enter the record to Update");
             string input = Console.ReadLine();
             string[] input1 = input.Split(",");
-            string[] contents = File.ReadAllLines("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Student.txt");
+            string[] contents = File.ReadAllLines("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Teacher.txt");
             string resultContent = string.Empty;
             foreach (string str in contents)
             {
                 string[] str1 = str.Split(",");
-                if (str1[0]==input1[0])
+                if (str1[0] == input1[0])
                 {
                     resultContent += input;
                     resultContent += "\n";
@@ -74,9 +75,9 @@ namespace BasicCSharp
                     resultContent += "\n";
                 }
             }
-            File.WriteAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Student.txt",resultContent);
+            File.WriteAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Teacher.txt", resultContent);
             Console.WriteLine("Record Updated!");
-           
+
 
         }
 
@@ -84,7 +85,7 @@ namespace BasicCSharp
         {
             Console.WriteLine("Enter the ID to remove");
             string input = Console.ReadLine();
-            string[] contents = File.ReadAllLines("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Student.txt");
+            string[] contents = File.ReadAllLines("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Teacher.txt");
             string resultContent = string.Empty;
             foreach (string str in contents)
             {
@@ -94,10 +95,10 @@ namespace BasicCSharp
                     resultContent += str;
                     resultContent += "\n";
                 }
-                
+
             }
-            File.WriteAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Student.txt", resultContent);
-            Console.WriteLine("Record deleted!");
+            File.WriteAllText("C:/Users/Lavanya_r5/OneDrive - Dell Technologies/Documents/CPP/Dot_Net_Learning/Teacher.txt", resultContent);
+            Console.WriteLine("Record Deleted!");
         }
     }
 }

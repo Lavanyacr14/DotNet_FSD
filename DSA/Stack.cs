@@ -34,7 +34,7 @@ namespace DSA
             if (this.topPointer == this.maxSize - 1)
             {
                 Console.WriteLine("Stack is Full");
-                array[topPointer] = num;
+                array[topPointer] = num;//return -1
             }
             else
             {
