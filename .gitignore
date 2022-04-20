@@ -3,3 +3,6 @@
 ################################################################################
 
 /DSA/bin/Debug/net5.0
+/DSA/obj
+/Docs.txt
+/BasicCSharp/obj/Debug/net5.0/BasicCSharp.csproj.AssemblyReference.cache

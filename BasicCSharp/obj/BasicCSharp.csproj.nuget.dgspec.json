@@ -28,6 +28,65 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj": {
+                "projectPath": "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj",
+        "projectName": "DSA",
+        "projectPath": "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj",
+        "packagesPath": "C:\\Users\\Lavanya_r5\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lavanya_r5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dcsartifacts.dell.com/artifactory/api/nuget/nuget": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },

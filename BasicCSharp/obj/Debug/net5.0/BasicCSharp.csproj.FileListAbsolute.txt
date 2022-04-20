@@ -13,3 +13,10 @@ C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\
 C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\obj\Debug\net5.0\ref\BasicCSharp.dll
 C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\obj\Debug\net5.0\BasicCSharp.pdb
 C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\obj\Debug\net5.0\BasicCSharp.genruntimeconfig.cache
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\obj\Debug\net5.0\BasicCSharp.csproj.AssemblyReference.cache
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\bin\Debug\net5.0\DSA.deps.json
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\bin\Debug\net5.0\DSA.runtimeconfig.json
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\bin\Debug\net5.0\DSA.runtimeconfig.dev.json
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\bin\Debug\net5.0\DSA.exe
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\bin\Debug\net5.0\DSA.dll
+C:\Users\Lavanya_r5\OneDrive - Dell Technologies\Documents\CPP\Dot_Net_Learning\DotNet_FSD\BasicCSharp\bin\Debug\net5.0\DSA.pdb

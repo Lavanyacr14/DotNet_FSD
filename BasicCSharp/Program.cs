@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using DSA.Algorithm;
+
 
 namespace BasicCSharp
 {
@@ -23,8 +27,10 @@ namespace BasicCSharp
             //new File_Operation().ReadFile();
             //new File_Operation().DeleteFile();
             //new StudentCrud().Do();
-            
+
             new Teacher_Crud().Do();
+            
+
         }
     }
 }

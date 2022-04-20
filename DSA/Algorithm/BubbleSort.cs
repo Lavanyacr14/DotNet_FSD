@@ -8,6 +8,7 @@ namespace DSA.Algorithm
 {
     class BubbleSort
     {
+        //Time complexity => n square
         int[] array = {99,88,44,33,22,11,5,3 };
         public void Do()
         {

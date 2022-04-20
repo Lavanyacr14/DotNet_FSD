@@ -13,7 +13,8 @@ namespace DSA
             // new LinkedList().Do();
             //new Linear_Search().Do();
             //new Binary_Search().Do();
-            new BubbleSort().Do();
+            //new BubbleSort().Do();
+            new MergeSort().Do();
         }
     }
 }

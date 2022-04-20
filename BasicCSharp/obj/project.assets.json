@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DSA/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DSA.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DSA.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DSA/1.0.0": {
+      "type": "project",
+      "path": "../DSA/DSA.csproj",
+      "msbuildProject": "../DSA/DSA.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DSA >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lavanya_r5\\.nuget\\packages\\": {}
@@ -34,7 +53,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj": {
+              "projectPath": "C:\\Users\\Lavanya_r5\\OneDrive - Dell Technologies\\Documents\\CPP\\Dot_Net_Learning\\DotNet_FSD\\DSA\\DSA.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
