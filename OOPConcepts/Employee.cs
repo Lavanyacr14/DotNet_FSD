@@ -12,12 +12,14 @@ namespace OOPConcepts
         public IITTeam ITTeam { get; set; }
         public IFinanceTeam FinanceTeam { get; set; }
         
-        public Employee(int ID,string Name, string Department)
+        public Employee(int ID,string Name, string Department, IFinanceTeam team, IITTeam itTeam)
         {
             this.ID = ID;
             this.Name = Name;
             this.Department = Department;
-            //ITTeam = new ITTeam();//still incorrect way
+            FinanceTeam = team;
+            //ITTeam = new IITTeam();//still incorrect way
+            ITTeam = itTeam;
         }
         public int ID { get; set; }
         public string Name { get; set; }
@@ -25,14 +27,17 @@ namespace OOPConcepts
 
         public void DoWork()
         {
+            Console.WriteLine(this.ID); 
             ITTeam.SolveProblem();
+            Console.WriteLine("Problem solved");
         }
 
-        public void GetSalary()
+        public virtual void GetSalary()
         {
             Console.WriteLine(this.ID);
             Console.WriteLine("Salary credited");
             FinanceTeam.TakeRequestFromEmployee();
+            
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class FinanceTeam : IFinanceTeam
+     class FinanceTeam : IFinanceTeam
     {
-        FinanceTeam()
+        public FinanceTeam()
         {
 
         }

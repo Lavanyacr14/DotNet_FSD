@@ -2,7 +2,7 @@
 
 namespace BLL
 {
-    public class ITTeam : IITTeam
+    class ITTeam : IITTeam
     {
         public void SolveProblem()
         {
