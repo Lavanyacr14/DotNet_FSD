@@ -21,7 +21,36 @@ namespace OOPConcepts
             //ITTeam = new IITTeam();//still incorrect way
             ITTeam = itTeam;
         }
-        public int ID { get; set; }
+
+        private bool Validate(int id)
+        {
+            if(id < 1)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        //getter & setter demo
+        private int _ID;
+
+        public int ID 
+        {
+            
+            set
+            {
+                if(!this.Validate(value))
+                    {
+                    throw new Exception("Invalid Value");
+                }
+                _ID = value;
+            }
+            get
+            {
+                return this._ID;
+            }
+
+        }
         public string Name { get; set; }
         public string Department { get; set; }
 
