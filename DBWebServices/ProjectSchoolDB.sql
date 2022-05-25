@@ -26,7 +26,8 @@ create table Student
 (
 Student_ID varchar(20) primary key,
 Student_Name varchar(50),
-Class_ID varchar(20) references Class(Class_ID)
+Class_ID varchar(20),
+foreign key (Class_ID) references Class(Class_ID)
 )
 
 //Student Table Index
