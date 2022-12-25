@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Gitlab"
+		},
+		{
+			"name": "FrontierKafka",
+			"path": "..\\..\\..\\Gitlab\\Kafka\\FrontierKafka"
+		}
+	],
+	"settings": {}
+}
