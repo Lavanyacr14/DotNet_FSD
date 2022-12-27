@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import "./ToDoList.css";
 function ToDoList() {
     const [todos,setTodos] = useState([]);
     const url = "https://jsonplaceholder.typicode.com/todos";
@@ -10,7 +11,10 @@ function ToDoList() {
 
     useEffect(initCall);
     return(
-        <table class="table">
+      <div className="container">
+        <a href="/newTodo" className="btn btn-primary float-start">New Todo</a>
+        <br/><br/>
+        <table class="table table-dark table-striped">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -34,6 +38,7 @@ function ToDoList() {
     }
   </tbody>
 </table>
+</div>
     );
 }
 
