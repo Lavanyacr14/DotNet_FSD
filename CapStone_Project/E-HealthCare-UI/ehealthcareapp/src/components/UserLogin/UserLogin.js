@@ -1,40 +1,64 @@
+import { useState } from "react";
+
 function UserLogin() {
+    function handleFormSubmit(event) {
+        const url = "https://jsonplaceholder.typicode.com/todos";
+        const newUser = {
+            fname: event.target.fname.value,
+            lname: event.target.lname.value,
+            email: event.target.email.value,
+            password: event.target.passwd.value,
+            phno: event.target.phno.value,
+            address: event.target.address.value,
+        };
+        console.log(newUser);
+        fetch(url,
+            {
+                method: "POST",
+                body: JSON.stringify(newUser),
+            }
+        );
+        console.log("form submitted");
+
+    };
+
     return (
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12 col-md-6">
                     <h2> Please Sign Up</h2>
                     <hr />
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="fname" class="form-label"> First Name</label>
-                            <input type="text" name="fname" class="form-control" />
+                    <form onSubmit={handleFormSubmit}>
+                        <div className="mb-3">
+                            <label htmlFor="fname" className="form-label"> First Name</label>
+                            <input type="text" name="fname" className="form-control" />
                         </div>
-                        <div class="mb-3">
-                            <label for="lname" class="form-label"> Last Name</label>
-                            <input type="text" name="lname" class="form-control" />
+                        <div className="mb-3">
+                            <label htmlFor="lname" className="form-label"> Last Name</label>
+                            <input type="text" name="lname" className="form-control" />
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label"> Email</label>
-                            <input type="text" name="email" class="form-control" />
+                        <div className="mb-3">
+                            <label htmlFor="email" className="form-label"> Email</label>
+                            <input type="text" name="email" className="form-control" />
                         </div>
-                        <div class="mb-3">
-                            <label for="passwd" class="form-label"> Password</label>
-                            <input type="password" name="passwd" class="form-control" />
+                        <div className="mb-3">
+                            <label htmlFor="passwd" className="form-label"> Password</label>
+                            <input type="password" name="passwd" className="form-control" />
                         </div>
-                        <div class="mb-3">
-                            <label for="dob" class="form-label"> Date Of Birth</label>
-                            <input type="date" name="dob" class="form-control" />
+                        <div className="mb-3">
+                            <label htmlFor="dob" className="form-label"> Date Of Birth</label>
+                            <input type="date" name="dob" className="form-control" />
                         </div>
-                        <div class="mb-3">
-                            <label for="phno" class="form-label"> Phone Number</label>
-                            <input type="text" name="phno" class="form-control" />
+                        <div className="mb-3">
+                            <label htmlFor="phno" className="form-label"> Phone Number</label>
+                            <input type="text" name="phno" className="form-control" />
                         </div>
-                        <div class="input-group">
-                            <span class="input-group-text">Address</span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <div className="input-group">
+                            <span className="input-group-text">Address</span>
+                            <textarea className="form-control" aria-label="With textarea" name="address"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success float-end">Signup</button>
+                        <br /> <br />
+                        <button type="submit" className="btn btn-success float-end">Signup</button>
                     </form>
                 </div>
             </div>
