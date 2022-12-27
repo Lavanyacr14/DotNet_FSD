@@ -1,9 +1,12 @@
 import "./NewTodo.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function NewTodo() {
 
     const [isCompleted, setCompleted] = useState(false);
+    const navigate = useNavigate();
+    const url = "https://jsonplaceholder.typicode.com/todos";
 
     function handleFormSubmit(event) {
 
@@ -15,6 +18,18 @@ function NewTodo() {
             completed: isCompleted,
         };
         console.log(newToDo);
+        fetch(url, {
+            method: "POST",
+            body: JSON.stringify(newToDo),
+            headers: new Headers({
+                "Content-Type": "application/json",
+            }),
+        })
+            .then(res => {
+                console.log(res);
+                console.log("Data is added")
+            });
+navigate("/");
     }
     return (
 
@@ -44,7 +59,7 @@ function NewTodo() {
                     </label>
                 </div>
                 <div className="form-check">
-                    <input className="form-check-input" type="radio" name="iscompleted" id="notcompleted" 
+                    <input className="form-check-input" type="radio" name="iscompleted" id="notcompleted"
                         onChange={() => {
                             setCompleted(false);
                         }}
