@@ -14,7 +14,7 @@ function Product() {
     return(
       <div className="container">
         <a href="/NewProduct" className="btn btn-primary float-start">Add Product</a>
-        <button className="btn btn-primary float-end">View User</button>
+        <a href="/ViewUser" className="btn btn-primary float-end">View User</a>
         <br/><br/>
         <table class="table table-default table-striped">
   <thead>
