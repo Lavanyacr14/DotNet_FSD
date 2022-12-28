@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function UserLogin() {
+    const navigate = useNavigate();
     function handleFormSubmit(event) {
         const url = "https://jsonplaceholder.typicode.com/todos";
+        
         const loginUser = {
             userid: event.target.userid.value,
             password: event.target.passwd.value,
@@ -15,12 +18,15 @@ function UserLogin() {
             }
         );
         console.log("User logged in");
-
+        navigate("/Product");
     };
 
     return (
         <div className="container">
             <div className="row">
+            <div className="col-sm-12 col-md-6">
+                <h1>ABC Health Care </h1>
+                </div>
                 <div className="col-sm-12 col-md-6">
                     <h2> Please Sign In</h2>
                     <hr />
